@@ -1,0 +1,12 @@
+com/mycompany/soap_db_client/Client.class
+com/mycompany/soap_db_server/ObjectFactory.class
+com/mycompany/soap_db_server/GetAutoInDB.class
+com/mycompany/soap_db_server/GetMapAutoResponse.class
+com/mycompany/soap_db_server/MAPPA.class
+com/mycompany/soap_db_server/package-info.class
+com/mycompany/soap_db_server/MAPPAENTRY.class
+com/mycompany/soap_db_server/GetAutoInDBResponse.class
+com/mycompany/soap_db_server/ServicesImplService.class
+com/mycompany/soap_db_server/MAPPAEntry.class
+com/mycompany/soap_db_server/GetMapAuto.class
+com/mycompany/soap_db_server/SERVICESIFACE.class

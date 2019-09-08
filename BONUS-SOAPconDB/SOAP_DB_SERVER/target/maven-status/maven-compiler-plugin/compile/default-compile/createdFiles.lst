@@ -1,0 +1,9 @@
+com/mycompany/soap_db_server/ServicesImpl.class
+com/mycompany/DB/DB.class
+com/mycompany/soap_db_server/MapAdapter.class
+com/mycompany/DB/SQLiteJDBCDriverConnection.class
+com/mycompany/soap_db_server/MAPPA.class
+com/mycompany/soap_db_server/MAPPA$MAPPAEntry.class
+com/mycompany/soap_db_server/package-info.class
+com/mycompany/soap_db_server/Runner.class
+com/mycompany/soap_db_server/SERVICESIFACE.class

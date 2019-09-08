@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap_db_server.mycompany.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ServicesImplService" targetNamespace="http://soap_db_server.mycompany.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://soap_db_server.mycompany.com/" elementFormDefault="unqualified" targetNamespace="http://soap_db_server.mycompany.com/" version="1.0">
+
+  <xs:element name="getAutoInDB" type="tns:getAutoInDB"/>
+
+  <xs:element name="getAutoInDBResponse" type="tns:getAutoInDBResponse"/>
+
+  <xs:element name="getMapAuto" type="tns:getMapAuto"/>
+
+  <xs:element name="getMapAutoResponse" type="tns:getMapAutoResponse"/>
+
+  <xs:complexType name="MAPPA">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="entry" type="tns:MAPPAEntry"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MAPPAEntry">
+    <xs:sequence>
+      <xs:element name="key" type="xs:int"/>
+      <xs:element minOccurs="0" name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMapAuto">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getMapAutoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:MAPPA"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAutoInDB">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAutoInDBResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getMapAuto">
+    <wsdl:part element="tns:getMapAuto" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAutoInDBResponse">
+    <wsdl:part element="tns:getAutoInDBResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMapAutoResponse">
+    <wsdl:part element="tns:getMapAutoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAutoInDB">
+    <wsdl:part element="tns:getAutoInDB" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SERVICESIFACE">
+    <wsdl:operation name="getMapAuto">
+      <wsdl:input message="tns:getMapAuto" name="getMapAuto">
+    </wsdl:input>
+      <wsdl:output message="tns:getMapAutoResponse" name="getMapAutoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAutoInDB">
+      <wsdl:input message="tns:getAutoInDB" name="getAutoInDB">
+    </wsdl:input>
+      <wsdl:output message="tns:getAutoInDBResponse" name="getAutoInDBResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicesImplServiceSoapBinding" type="tns:SERVICESIFACE">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getMapAuto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getMapAuto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMapAutoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAutoInDB">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAutoInDB">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAutoInDBResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicesImplService">
+    <wsdl:port binding="tns:ServicesImplServiceSoapBinding" name="ServicesImplPort">
+      <soap:address location="http://localhost:7777/ServerAuto"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
