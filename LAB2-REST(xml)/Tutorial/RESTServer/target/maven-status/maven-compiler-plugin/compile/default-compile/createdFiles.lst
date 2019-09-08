@@ -1,0 +1,4 @@
+com/mycompany/restserver/ServerRest.class
+com/mycompany/restserver/Student.class
+com/mycompany/restserver/Course.class
+com/mycompany/restserver/CourseRepository.class
