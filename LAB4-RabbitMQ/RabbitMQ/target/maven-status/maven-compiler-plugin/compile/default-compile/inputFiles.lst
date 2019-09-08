@@ -1,0 +1,12 @@
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/PublishSubscribe_Broadcast/Subscriber.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/Topic/Server.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/WorkQueue/Server.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/HelloWorld/Client.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/Routing/Subscriber.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/Topic/Subscriber.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/Topic/RoutingKeys.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/HelloWorld/Server.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/WorkQueue/Worker.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/Routing/Severity.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/PublishSubscribe_Broadcast/Server.java
+/home/lorenzo/NetBeansProjects/RabbitMQ/src/main/java/Routing/Server.java
