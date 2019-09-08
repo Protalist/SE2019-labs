@@ -1,0 +1,15 @@
+com/mycompany/client/package-info.class
+com/mycompany/client/ServicesInterface.class
+com/mycompany/client/GetDBclientSaldoResponse.class
+com/mycompany/client/ListofAccount.class
+ClientRemote.class
+com/mycompany/client/MAP2Entry.class
+com/mycompany/client/GetDBclientSaldo.class
+com/mycompany/client/ObjectFactory.class
+com/mycompany/client/GetLoanersResponse.class
+com/mycompany/client/LoanAccount.class
+ClientLezzo.class
+support/Utilities.class
+com/mycompany/client/MAP2.class
+com/mycompany/client/GetLoaners.class
+com/mycompany/client/ServicesService.class

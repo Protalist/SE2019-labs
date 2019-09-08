@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws_bank.mycompany.com/" xmlns:ns1="http://Bank.server_bank.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws_bank.mycompany.com/">
+
+<xs:import namespace="http://Bank.server_bank.mycompany.com/" schemaLocation="http://localhost:8081/Services?xsd=2"/>
+
+<xs:element name="getDBclientSaldo" type="tns:getDBclientSaldo"/>
+
+<xs:element name="getDBclientSaldoResponse" type="tns:getDBclientSaldoResponse"/>
+
+<xs:element name="getLoaners" type="tns:getLoaners"/>
+
+<xs:element name="getLoanersResponse" type="tns:getLoanersResponse"/>
+
+<xs:complexType name="getDBclientSaldo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getDBclientSaldoResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:MAP2" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLoaners">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getLoanersResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:ListofAccount" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
