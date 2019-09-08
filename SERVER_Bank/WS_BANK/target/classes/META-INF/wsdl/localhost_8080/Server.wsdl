@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Bank.server_bank.mycompany.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="BankImplementationService" targetNamespace="http://Bank.server_bank.mycompany.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://Bank.server_bank.mycompany.com/" elementFormDefault="unqualified" targetNamespace="http://Bank.server_bank.mycompany.com/" version="1.0">
+
+  <xs:element name="getClientByID" type="tns:getClientByID"/>
+
+  <xs:element name="getClientByIDResponse" type="tns:getClientByIDResponse"/>
+
+  <xs:element name="getClientIDs" type="tns:getClientIDs"/>
+
+  <xs:element name="getClientIDsResponse" type="tns:getClientIDsResponse"/>
+
+  <xs:element name="getConti" type="tns:getConti"/>
+
+  <xs:element name="getContiResponse" type="tns:getContiResponse"/>
+
+  <xs:element name="getDbop" type="tns:getDbop"/>
+
+  <xs:element name="getDbopResponse" type="tns:getDbopResponse"/>
+
+  <xs:element name="getOperationByID" type="tns:getOperationByID"/>
+
+  <xs:element name="getOperationByIDResponse" type="tns:getOperationByIDResponse"/>
+
+  <xs:element name="getOperationsByClientID" type="tns:getOperationsByClientID"/>
+
+  <xs:element name="getOperationsByClientIDResponse" type="tns:getOperationsByClientIDResponse"/>
+
+  <xs:complexType name="getOperationByID">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getOperationByIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getConti">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getContiResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:SET"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SET">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="conto" type="tns:Conto"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Conto">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:int"/>
+      <xs:element name="saldo" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getOperationsByClientID">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getOperationsByClientIDResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClientIDs">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getClientIDsResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDbop">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getDbopResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:MAP"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MAP">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="entry" type="tns:MAPEntry"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MAPEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int"/>
+      <xs:element minOccurs="0" name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClientByID">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getClientByIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getOperationByID">
+    <wsdl:part element="tns:getOperationByID" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getContiResponse">
+    <wsdl:part element="tns:getContiResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getClientByIDResponse">
+    <wsdl:part element="tns:getClientByIDResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getConti">
+    <wsdl:part element="tns:getConti" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOperationsByClientID">
+    <wsdl:part element="tns:getOperationsByClientID" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOperationByIDResponse">
+    <wsdl:part element="tns:getOperationByIDResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOperationsByClientIDResponse">
+    <wsdl:part element="tns:getOperationsByClientIDResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getClientIDs">
+    <wsdl:part element="tns:getClientIDs" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDbop">
+    <wsdl:part element="tns:getDbop" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDbopResponse">
+    <wsdl:part element="tns:getDbopResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getClientIDsResponse">
+    <wsdl:part element="tns:getClientIDsResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getClientByID">
+    <wsdl:part element="tns:getClientByID" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="BankInterface">
+    <wsdl:operation name="getOperationByID">
+      <wsdl:input message="tns:getOperationByID" name="getOperationByID">
+    </wsdl:input>
+      <wsdl:output message="tns:getOperationByIDResponse" name="getOperationByIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConti">
+      <wsdl:input message="tns:getConti" name="getConti">
+    </wsdl:input>
+      <wsdl:output message="tns:getContiResponse" name="getContiResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOperationsByClientID">
+      <wsdl:input message="tns:getOperationsByClientID" name="getOperationsByClientID">
+    </wsdl:input>
+      <wsdl:output message="tns:getOperationsByClientIDResponse" name="getOperationsByClientIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientIDs">
+      <wsdl:input message="tns:getClientIDs" name="getClientIDs">
+    </wsdl:input>
+      <wsdl:output message="tns:getClientIDsResponse" name="getClientIDsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDbop">
+      <wsdl:input message="tns:getDbop" name="getDbop">
+    </wsdl:input>
+      <wsdl:output message="tns:getDbopResponse" name="getDbopResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientByID">
+      <wsdl:input message="tns:getClientByID" name="getClientByID">
+    </wsdl:input>
+      <wsdl:output message="tns:getClientByIDResponse" name="getClientByIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BankImplementationServiceSoapBinding" type="tns:BankInterface">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getOperationByID">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getOperationByID">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOperationByIDResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConti">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getConti">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getContiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOperationsByClientID">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getOperationsByClientID">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOperationsByClientIDResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientIDs">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getClientIDs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getClientIDsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDbop">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDbop">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDbopResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientByID">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getClientByID">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getClientByIDResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BankImplementationService">
+    <wsdl:port binding="tns:BankImplementationServiceSoapBinding" name="BankImplementationPort">
+      <soap:address location="http://localhost:8080/Server"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
