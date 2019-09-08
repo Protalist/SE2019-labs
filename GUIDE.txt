@@ -1,0 +1,46 @@
+REST
+https://www.baeldung.com/apache-cxf-rest-api
+
+https://stackoverflow.com/questions/18619891/apache-cxf-restclient-clarity
+
+http://www.learninjava.com/pages/restful-client-using-cxf.php
+
+https://www.baeldung.com/jersey-jax-rs-client
+
+http://cxf.apache.org/docs/jax-rs-client-api.html#JAXRSClientAPI-CXFWebClientAPI
+
+http://putridparrot.com/blog/creating-a-cxf-service-thatresponds-with-json-or-xml/
+_____________________________________________________________________________________________________________________
+
+SOAP
+https://www.baeldung.com/introduction-to-apache-cxf
+
+JAXB
+https://www.javacodegeeks.com/2014/12/jaxb-tutorial-xml-binding.html
+
+_____________________________________________________________________________________________________________________
+
+MAVEN
+https://www.baeldung.com/maven
+____________________________________________________________________________________________________________________
+
+ACTIVEMQ JNDI
+https://activemq.apache.org/jndi-support.html
+
+__________________________________________________________________________________________________________________
+
+JAVA SQLITE
+http://databasemaster.it/sqlite-java/
+________________________________________________________________________________________________________________
+
+RABBITMQ TUTORIAL
+
+https://www.rabbitmq.com/getstarted.html
+
+___________________________________________________________________________________________________________________
+
+LAB 6 just in case XD
+
+https://gist.github.com/miguel76/f5c79e51b9b355b86ace2a7d26a222e7
+
+https://speakerdeck.com/jakevdp/statistics-for-hackers

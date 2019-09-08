@@ -1,0 +1,8 @@
+com/eshop/backend/SQLiteJDBCDriverConnection.class
+com/eshop/backend/services/Runner.class
+com/eshop/backend/services/RabbitMqServer.class
+com/eshop/backend/services/UserOnline.class
+com/eshop/backend/services/ListofItem.class
+com/eshop/backend/services/ShopRepository.class
+com/eshop/backend/BackEnd.class
+com/eshop/backend/services/Item.class

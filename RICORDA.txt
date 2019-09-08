@@ -1,0 +1,18 @@
+IL LOGGER DA USARE nel pom --> altrimenti potrebbero essere cazzi amari
+
+<dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.5.5</version>
+   </dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>1.5.5</version>
+   </dependency>
+
+___________________________________________________________________________________________________________________________________
+
+Per l'unmarshal nel client, ricopia le classi del server (per il REST) e fallo a mano (ex: MAP --> Map<Integer,String>)
+______________________________________________________________________________________________________________________________
+Per le REST, la funzione convert per leggere le stringhe ricevute dopo una get (lette con Inputstream)

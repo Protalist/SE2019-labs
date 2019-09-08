@@ -1,0 +1,8 @@
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/BackEnd.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/services/ListofItem.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/services/Item.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/services/ShopRepository.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/services/RabbitMqServer.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/SQLiteJDBCDriverConnection.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/services/Runner.java
+/home/lorenzo/NetBeansProjects/Lab5/src/main/java/com/eshop/backend/services/UserOnline.java
