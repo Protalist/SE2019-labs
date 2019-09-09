@@ -44,3 +44,10 @@ LAB 6 just in case XD
 https://gist.github.com/miguel76/f5c79e51b9b355b86ace2a7d26a222e7
 
 https://speakerdeck.com/jakevdp/statistics-for-hackers
+-------------------------------------------------------------------------------------------------------------------------
+client soap
+com.mycompany.lab1.xmlxfcpizza.PizzaWSImplService service= new com.mycompany.lab1.xmlxfcpizza.PizzaWSImplService();
+    com.mycompany.lab1.xmlxfcpizza.PizzaWSInterface port=service.getPizzaWSImplPort();
+    // TODO process result here
+    java.lang.String result = port.getCosts();
+    return result;
