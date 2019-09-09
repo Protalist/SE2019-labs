@@ -51,3 +51,25 @@ com.mycompany.lab1.xmlxfcpizza.PizzaWSImplService service= new com.mycompany.lab
     // TODO process result here
     java.lang.String result = port.getCosts();
     return result;
+----------------------------------------------------------------------------------
+CLient REST
+WebClient client2 = WebClient.create("http://localhost:8080/risorse/");
+System.out.println(client2.getBaseURI());
+        Risorsa2 r3= new Risorsa2();
+        r3.setName("Risorsa bella");
+        r3.setId("giulio33wqr317676733");
+        r3.setFoundation(LocalDate.now());
+        //OutputStream xml= new OutputStream();
+        File xml = new File("risorsa.txt");
+        xml.createNewFile();
+        JAXB.marshal(r3, xml);
+        BufferedReader br = new BufferedReader(new FileReader(xml));
+        String st;
+        while ((st = br.readLine()) != null) {
+            System.out.println(st);
+        }
+        System.out.println(client2.getCurrentURI());
+        Response r = client2.path("").accept("xml").post(xml);
+        
+        System.out.println("\n\n\n" +r.getStatus()+"\n"+ r.getHeaders());
+        client2.reset();
